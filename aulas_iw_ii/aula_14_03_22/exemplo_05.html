@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05</title>
+</head>
+<body>
+    <script>
+        var n1 = 1543.5
+        n1.toFixed(2)
+        document.write(`${n1.toLocaleString('pt-BR', {style:'currency',currency:'BRL'})}<br><br>`)
+        document.write(`${n1.toLocaleString('en', {style:'currency',currency:'USD'})}<br><br>`)
+        document.write(`${n1.toLocaleString('jp', {style:'currency',currency:'JPY'})}<br><br>`)
+        document.write(`${n1.toLocaleString('eu', {style:'currency',currency:'EUR'})}`)
+    </script>
+</body>
+</html>
