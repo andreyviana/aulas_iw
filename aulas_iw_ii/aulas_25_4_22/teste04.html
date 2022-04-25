@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 04 - Condicional</title>
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS</h1>
+    Velocidade do carro: <input type="number" name="txtVel" id="txtVel"> Km/h
+    <input type="button" value="VERIFICAR" onclick="calcular()">
+    <div id="resultado"></div> 
+</body>
+<script>
+    function calcular(){
+        var txtV = document.querySelector(`input#txtVel`)
+        var res = document.querySelector(`div#resultado`)
+        var vel = Number(txtV.value)
+        res.innerHTML = `<p>sua velocidade atual é de <strong>${vel} Km/h</strong>`
+        if(vel>15){
+            res.innerHTML += `VOCÊ... - FOI... - <strong>MULTADO</strong>!!!`
+        }
+        res.innerHTML += `<p>Dirija sempre com segurança</p>`    
+
+    }
+</script>
+</html>
