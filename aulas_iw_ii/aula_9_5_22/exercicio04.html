@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 04</title>
+</head>
+<body>
+    
+<script>
+    let a = Number(prompt('Digite o valor de a'))
+    let b = Number(prompt('Digite o valor de b'))
+    let c = Number(prompt('Digite o valor de c'))
+
+    //calcular o delta
+    //delta = b²-4ac
+    // Math.pow(base,esp)
+
+    let delta = (Math.pow(b,2))-4*a*c
+    console.log(`valor do delta: ${delta}`)
+
+    
+    function bhaskara(b,delta,a){
+        //calcular raízes x1 e x2
+        //x1 = (-b+√²delta)/2a
+        //x2 = (-b-√²delta)/2a
+        //Math.sqrt(valor)
+
+        let x1 = (-b+Math.sqrt(delta))/2*a
+        let x2 = (-b-Math.sqrt(delta))/2*a
+
+        //console.log(`raiz de x1 ==> ${x1}`)
+        //console.log(`raiz de x2 ==> ${x2}`)
+        let f = [x1,x2]
+        return f       
+    }
+
+    function funcao2(){
+        let y = bhaskara(b,delta,a) //vai ser um vetor, pois recebe 2 valores
+        console.log(`raiz de x1 ==> ${y[0]}`)
+        console.log(`raiz de x2 ==> ${y[1]}`)
+    }
+
+
+
+
+    if(delta<0){
+        console.log(`nao existe raiz de numero negativo`)
+
+    }else
+        if(delta == 0){
+        funcao2()
+        console.log(`Com delta igual, as duas raizes sao iguais`)
+    }else{
+        funcao2()
+    }
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
