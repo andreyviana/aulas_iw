@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+</head>
+<body>
+
+<script>
+    let n = [3,6,9]
+    console.log(n)
+    console.log(typeof(n))
+    console.log(n[1])
+
+    n.push(12)
+    console.log(n)
+    console.log('tamanho do vetor: ',n.length)
+
+    //ORGANIZA O VETOR EM ORDEM CRESCENTE(OU ERA PRA SER) sort()
+    console.log(n.sort())
+    console.log(n)
+
+    let len = n.length
+
+    for(let i=0;i<len;i++){
+        console.log(`posição de i = ${i} com valor: ${n[i]}`)
+    }
+
+    /*
+    //O MESMO FOR ACIMA, PORÉM USANDO LAÇO "FOR IN"
+    for(let i in n){
+        console.log(`posição de i = ${i} com valor: ${n[i]}`)
+    }*/
+
+    let arrTeste = [1,8,7,10,9]
+
+    console.log(arrTeste.indexOf(7))
+    //retorna a posição do indice de "7" = 2
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
