@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 02</title>
+</head>
+
+<body>
+    <script>
+
+        let cA = 80000
+        let cB = 200000
+        let aA = 0.03
+        let aB = 0.015
+        let ano = 0
+
+        while(cA<=cB){
+            cA = (cA*aA)+cA
+            cB = (cB*aB)+cB
+            ano = ano+1
+        }
+        document.write(`é necessário ${ano} anos para a populaçao de país A se igualar ou ultrapassar a do páis B`)
+    </script>
+</body>
+
+</html>

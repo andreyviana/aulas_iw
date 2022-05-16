@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 03</title>
+</head>
+
+<body>
+    <script>
+        const forever = 1
+
+        while(forever==1){
+            let cA = Number(prompt('digite o tamanho da populaçao A'))
+            let aA = Number(prompt('digite um valor para a taxa de crescimento da populaçao A'))
+            let cB = Number(prompt('digite o tamanho da populaçao B'))
+            let aB = Number(prompt('digite um valor para a taxa de crescimento da populaçao B'))
+            let ano = 0
+
+            if(cB>cA){
+                while(cB>cA){
+                    cA = cA+((cA/100)*aA)
+                    cB = cB+((cB/100)*aB)
+                    ano++
+                }
+            }else{
+                while(cA>cB){
+                    cA = cA+((cA/100)*aA)
+                    cB = cB+((cB/100)*aB)
+                    ano++
+                }
+            }
+            alert(`é necessário ${ano} anos para que a populaçao de A e B se igualem e se ultrapassem`)
+        }
+    </script>
+</body>
+
+</html>
